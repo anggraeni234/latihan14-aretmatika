@@ -1,0 +1,22 @@
+function hitung() {
+  // menampung nilai harga
+  let harga = Number(document.getElementById("harga").value)
+  
+//menampung nilai jumlah
+let jumlah = Number(document.getElementById("jumlah").value)
+
+//menampung nilai diskon
+let diskon = Number(document.getElementById("diskon").value)
+
+//langkah 1: hitung subtotal
+let subtotal = harga * jumlah
+
+//langkah 2: menghitung diskon
+//langkah 3: menghitung pajak
+//langkah 4: hitung total
+
+//langkah 5:
+document.getElementById("hasil").innerHTML =`
+subtotal: Rp ${subtotal} <br>
+`
+}
