@@ -12,11 +12,16 @@ let diskon = Number(document.getElementById("diskon").value)
 let subtotal = harga * jumlah
 
 //langkah 2: menghitung diskon
-//langkah 3: menghitung pajak
+let potongan = subtotal * (diskon / 100)
+//langkah 3: menghitung pajak,misal 11%
+let pajak = subtotal *(11/100)
 //langkah 4: hitung total
-
+let total = subtotal - potongan + pajak
 //langkah 5:
 document.getElementById("hasil").innerHTML =`
 subtotal: Rp ${subtotal} <br>
+Diskon (${diskon}%): -Rp ${potongan} <br>  
+pajak ($11%): +Rp ${pajak} <br>
+total bayar: Rp ${total} <br>
 `
 }
