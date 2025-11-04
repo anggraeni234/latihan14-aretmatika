@@ -25,3 +25,5 @@ pajak ($11%): +Rp ${pajak} <br>
 total bayar: Rp ${total} <br>
 `
 }
+
+
